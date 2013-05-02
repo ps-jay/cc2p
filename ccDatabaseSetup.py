@@ -4,9 +4,9 @@ import sqlite3
 
 values = {
     'temperature': 'REAL',
-    'phase1': 'INTEGER',
-    'phase2': 'INTEGER',
-    'phase3': 'INTEGER',
+    'power': 'INTEGER',
+#    'phase2': 'INTEGER',
+#    'phase3': 'INTEGER',
 }
 
 database = sqlite3.connect('/opt/cc/power.sqlite')

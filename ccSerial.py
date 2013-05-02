@@ -34,24 +34,24 @@ while True:
 
         tmpr = dom.getElementsByTagName("tmpr")
         ch1  = dom.getElementsByTagName("ch1")
-        ch2  = dom.getElementsByTagName("ch2")
-        ch3  = dom.getElementsByTagName("ch3")
+#        ch2  = dom.getElementsByTagName("ch2")
+#        ch3  = dom.getElementsByTagName("ch3")
 
         values['temperature']  = tmpr[0].childNodes[0].nodeValue
-        values['phase1'] = ch1[0].getElementsByTagName("watts")[0].childNodes[0].nodeValue
-        values['phase2'] = ch2[0].getElementsByTagName("watts")[0].childNodes[0].nodeValue
-        values['phase3'] = ch3[0].getElementsByTagName("watts")[0].childNodes[0].nodeValue
+        values['power'] = ch1[0].getElementsByTagName("watts")[0].childNodes[0].nodeValue
+#        values['phase2'] = ch2[0].getElementsByTagName("watts")[0].childNodes[0].nodeValue
+#        values['phase3'] = ch3[0].getElementsByTagName("watts")[0].childNodes[0].nodeValue
 
         utcTime  = time.gmtime()
         unixTime = calendar.timegm(utcTime)
         isoTime  = time.strftime('%Y-%m-%dT%H:%M:%SZ', utcTime)
 
-        print "Currently: time=%s, temperature=%.1f, ch1=%d, ch2=%d, ch3=%d" % (
+        print "Currently: time=%s, temperature=%.1f, ch1=%d" % ( #, ch2=%d, ch3=%d" % (
             isoTime,
             float(values['temperature']),
             int(values['phase1']),
-            int(values['phase2']),
-            int(values['phase3']),
+#            int(values['phase2']),
+#            int(values['phase3']),
         )
 
     except KeyboardInterrupt, e:

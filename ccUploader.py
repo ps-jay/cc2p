@@ -10,16 +10,16 @@ import urllib
 
 values = {
     'temperature': [],
-    'phase1': [],
-    'phase2': [],
-    'phase3': [],
+    'power': [],
+#    'phase2': [],
+#    'phase3': [],
 }
 
 csvs = {
     'temperature': '',
-    'phase1': '',
-    'phase2': '',
-    'phase3': '',
+    'power': '',
+#    'phase2': '',
+#    'phase3': '',
 }
 
 pid = str(os.getpid())

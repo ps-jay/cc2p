@@ -49,7 +49,7 @@ while True:
         print "Currently: time=%s, temperature=%.1f, ch1=%d" % ( #, ch2=%d, ch3=%d" % (
             isoTime,
             float(values['temperature']),
-            int(values['phase1']),
+            int(values['power']),
 #            int(values['phase2']),
 #            int(values['phase3']),
         )

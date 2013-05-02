@@ -80,7 +80,7 @@ for value in values:
         conn = httplib.HTTPConnection('api.pachube.com:80')
         conn.request(
             'POST',
-            "/v2/feeds/40684/datastreams/%s/datapoints" % value,
+            "/v2/feeds/129200/datastreams/%s/datapoints" % value,
             csvs[value],
             headers,
         )

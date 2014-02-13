@@ -72,15 +72,15 @@ headers = {
     "Content-type": "application/x-www-form-urlencoded",
     "Accept": "text/plain",
     #"Accept": "*/*",
-    "X-PachubeApiKey": "-qALpnF43LScUy4BCmKDRsI59S545xIN56T8YvtMmCI",
+    "X-ApiKey": "-qALpnF43LScUy4BCmKDRsI59S545xIN56T8YvtMmCI",
 }
 
 for value in values:
     try:
-        conn = httplib.HTTPConnection('api.pachube.com:80')
+        conn = httplib.HTTPConnection('api.xively.com:80')
         conn.request(
             'POST',
-            "/v2/feeds/129200/datastreams/%s/datapoints" % value,
+            "/v2/feeds/1864626198/datastreams/%s/datapoints" % value,
             csvs[value],
             headers,
         )

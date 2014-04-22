@@ -1,4 +1,4 @@
-#!/bin/env python26
+#!/bin/env python
 
 import sqlite3
 

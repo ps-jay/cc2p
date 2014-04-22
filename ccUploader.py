@@ -32,7 +32,7 @@ else:
     file(pidfile, 'w').write(pid)
 
 try:
-    database = sqlite3.connect('/opt/cc/power.sqlite')
+    database = sqlite3.connect('/opt/cc2p.data/power.sqlite')
     cursor = database.cursor()
 
     for value in values:
@@ -92,7 +92,7 @@ for value in values:
 
         if int(response.status) == 200:
             try:
-                database = sqlite3.connect('/opt/cc/power.sqlite')
+                database = sqlite3.connect('/opt/cc2p.data/power.sqlite')
                 cursor = database.cursor()
 
                 for row in values[value]:

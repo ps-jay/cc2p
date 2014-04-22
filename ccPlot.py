@@ -30,7 +30,7 @@ else:
     file(pidfile, 'w').write(pid)
 
 try:
-    database = sqlite.connect('/opt/cc/power.sqlite')
+    database = sqlite.connect('/opt/cc2p.data/power.sqlite')
     cursor = database.cursor()
 
     for value in values:

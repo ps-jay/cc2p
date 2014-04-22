@@ -31,7 +31,7 @@ else:
     start = calendar.timegm(start.timetuple())
     end = calendar.timegm(end.timetuple())
 
-database = sqlite3.connect('/opt/cc/power.sqlite')
+database = sqlite3.connect('/opt/cc2p.data/power.sqlite')
 cursor = database.cursor()
 
 # Create tables

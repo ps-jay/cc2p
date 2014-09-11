@@ -72,7 +72,7 @@ headers = {
     "Content-type": "application/x-www-form-urlencoded",
     "Accept": "text/plain",
     #"Accept": "*/*",
-    "X-ApiKey": "-qALpnF43LScUy4BCmKDRsI59S545xIN56T8YvtMmCI",
+    "X-ApiKey": sys.argv[1].strip(),
 }
 
 for value in values:
